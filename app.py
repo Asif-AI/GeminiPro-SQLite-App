@@ -16,7 +16,7 @@ def get_gemini_response(question, prompt):
     return response.text
 
 #Function to retrive query from SQL databases
-def read_sql_query(sql, db):
+def read_sql_query(sql,db):
     conn = sqlite3.connect(db)
     cur=conn.cursor()
 
